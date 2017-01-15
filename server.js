@@ -9,9 +9,7 @@ const api = require('./lib/api');
 
 const app = new koa()
 
-router.get('/receiving', async (ctx,next) => {
-  this.body = await receive();
-})
+
 
 app
   .use(router.routes())
